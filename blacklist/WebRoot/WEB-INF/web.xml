@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>cookie</display-name>
+  
+  <filter>
+  
+       <filter-name>CookieFilter</filter-name>
+        <filter-class>filter.CookieFilter</filter-class>
+  </filter>
+  
+  <filter-mapping>
+    <filter-name>CookieFilter</filter-name>
+    <url-pattern>/index.jsp</url-pattern>
+  
+  </filter-mapping>
+  
+  
+  <display-name>blacklist</display-name>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>servlet.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FindAllServlet</servlet-name>
+    <servlet-class>servlet.FindAllServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateBlackList</servlet-name>
+    <servlet-class>servlet.UpdateBlackList</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FindByIdServlet</servlet-name>
+    <servlet-class>servlet.FindByIdServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateServlet</servlet-name>
+    <servlet-class>servlet.UpdateServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteServlet</servlet-name>
+    <servlet-class>servlet.DeleteServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddServlet</servlet-name>
+    <servlet-class>servlet.AddServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/servlet/RegisterServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/servlet/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FindAllServlet</servlet-name>
+    <url-pattern>/servlet/FindAllServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateBlackList</servlet-name>
+    <url-pattern>/servlet/UpdateBlackList</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FindByIdServlet</servlet-name>
+    <url-pattern>/servlet/FindByIdServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateServlet</servlet-name>
+    <url-pattern>/servlet/UpdateServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteServlet</servlet-name>
+    <url-pattern>/servlet/DeleteServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddServlet</servlet-name>
+    <url-pattern>/servlet/AddServlet</url-pattern>
+  </servlet-mapping>
+  <filter>
+    <filter-name>SessionFilter</filter-name>
+    <filter-class>filter.SessionFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>SessionFilter</filter-name>
+    <url-pattern>/main.jsp</url-pattern>
+  </filter-mapping>
+  <filter>
+    <filter-name>BlackListFilter</filter-name>
+    <filter-class>filter.BlackListFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>BlackListFilter</filter-name>
+    <url-pattern>/servlet/LoginServlet</url-pattern>
+  </filter-mapping>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
